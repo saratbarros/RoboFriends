@@ -6,29 +6,16 @@ import Scroll from "../components/Scroll";
 import ErrorBoundry from "../components/ErrorBoundry";
 
 function App () {
-    // code previously used before the useState hook
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         robots: [],
-    //         searchfield: ''
-    //     }
-    // }
     const [robots, setRobots] = useState([])
     const [searchfield, setSearchfield] = useState('')
-    // const [count, setCount] = useState(0) - tutorial purposes
 
-    // code previously used before the useEffect hook
-    // componentDidMount() {
-    //     fetch('https://jsonplaceholder.typicode.com/users')
-    //     .then(response=> response.json())
-    //     .then(users => this.setState({ robots: users}));
-    // }
+    const [count, setCount] = useState(0) //- tutorial purposes
+
     useEffect(() => {
       fetch('https://jsonplaceholder.typicode.com/users')
         .then(response=> response.json())
         .then(users => {setRobots(users)});   
-    },[]) //[count] - only runs when count changes
+    },[count]) // only runs when count changes
 
     const onSearchChange = (event) => {
         setSearchfield(event.target.value)
@@ -41,7 +28,7 @@ function App () {
         (
             <div className='tc'>
                 <h1 className ='f1'>RoboFriends</h1>
-                {/* <button onClick={()=>setCount(count+1)}>Click Me!</button> */}
+                <button onClick={()=>setCount(count+1)}>Click Me!</button>
                 <Searchbox searchChange={onSearchChange}/>
                 <Scroll>
                     <ErrorBoundry>
