@@ -1,8 +1,7 @@
 # RoboFriends
 - Zero to Mastery: Web developer course 2022
-- Project was created with [React App](https://github.com/facebook/create-react-app).
+- Project with same code from the main branch but using React Hooks.
 
 ## About this project
-- Introduction to the framework React.js + Hooks.
-- Learning folder structure, fundamentals and going indepth with HTML5 Semantic.
+- Introduction to React Hooks.
 - Working with API's and reading the docs.
