@@ -4,4 +4,4 @@
 
 ## About this project
 Introduction to the popular Javascript framework - React.js. Learning folder structure, fundamentals, components and going indepth with HTML5 Semantic. Working with API's as JSON placeholder and searchable cards funtion.<br>
-2nd branch is the same project but using React Hooks.
+- Branch named RoboFiends-React-Hooks is the same project but using React Hooks instead.
